@@ -29,11 +29,10 @@ public class Splash extends JFrame {
         pbar.setMinimum(10);
         pbar.setMaximum(100);
         pbar.setStringPainted(true);
-        pbar.setForeground(Color.GRAY);
         pbar.setToolTipText("Loading Please Wait");
         imglabel.setBounds(0, 0, 1000, 740);
         add(pbar);
-            pbar.setForeground(Color.WHITE);
+           pbar.setForeground(Color.WHITE);
          pbar.setBackground(Color.black);
         pbar.setPreferredSize(new Dimension(310, 30));
         pbar.setBounds(0, 680, 1000, 30);
