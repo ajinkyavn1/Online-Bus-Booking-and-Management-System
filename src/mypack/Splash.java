@@ -17,10 +17,11 @@ public class Splash extends JFrame {
         super("System is Booting ");
         setSize(404, 340);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setResizable(false);
+        
         setLocationRelativeTo(null);
         setUndecorated(true);
-     
-        img = new ImageIcon(getClass().getResource("/img/splash.png"));
+        img = new ImageIcon(getClass().getResource("/img/ss.png"));
         imglabel = new JLabel(img);
         add(imglabel);
         setLayout(null);
