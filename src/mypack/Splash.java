@@ -21,7 +21,7 @@ public class Splash extends JFrame {
         
         setLocationRelativeTo(null);
         setUndecorated(true);
-        img = new ImageIcon(getClass().getResource("/img/ss.png"));
+        img = new ImageIcon(getClass().getResource("/img/ss.jpg"));
         imglabel = new JLabel(img);
         add(imglabel);
         setLayout(null);
