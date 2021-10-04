@@ -15,7 +15,7 @@ public class Splash extends JFrame {
 
     public Splash() {
         super("System is Booting ");
-        setSize(404, 340);
+        setSize(1000, 740);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setResizable(false);
         
@@ -31,10 +31,12 @@ public class Splash extends JFrame {
         pbar.setStringPainted(true);
         pbar.setForeground(Color.GRAY);
         pbar.setToolTipText("Loading Please Wait");
-        imglabel.setBounds(0, 0, 404, 310);
+        imglabel.setBounds(0, 0, 1000, 740);
         add(pbar);
+            pbar.setForeground(Color.WHITE);
+         pbar.setBackground(Color.black);
         pbar.setPreferredSize(new Dimension(310, 30));
-        pbar.setBounds(0, 290, 404, 20);
+        pbar.setBounds(0, 680, 1000, 30);
         
 
         Thread t = new Thread() {
@@ -43,12 +45,13 @@ public class Splash extends JFrame {
                 int i = 0;
                 while (i <= 100) {
                     pbar.setValue(i);
+                   
                     try {
                         sleep(90);
                     } catch (InterruptedException ex) {
                         
                     }
-                    i+=5;
+                    i+=2;
                 }
             }
         };
