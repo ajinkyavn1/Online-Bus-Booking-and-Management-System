@@ -30,12 +30,12 @@ public class Main {
         Splash s=new Splash();
         s.setVisible(true);
         Thread t=Thread.currentThread();
-        t.sleep(10000);
+        t.sleep(5000);
         s.dispose();
         SwingUtilities.invokeLater(new Runnable(){
             public void run()
             {
-                //new Login().setVisible(true);
+                new Login().setVisible(true);
             }
         });
         
