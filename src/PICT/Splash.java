@@ -1,4 +1,4 @@
-package mypack;
+package PICT;
 
 import javax.swing.*;
 import java.awt.*;
