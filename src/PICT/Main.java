@@ -35,7 +35,10 @@ public class Main {
         SwingUtilities.invokeLater(new Runnable(){
             public void run()
             {
-                new Login().setVisible(true);
+                Login lp=new Login();
+               
+                 lp.setVisible(true);
+                 lp.setLocation(500,150);
             }
         });
         
